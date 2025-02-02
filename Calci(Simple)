@@ -1,0 +1,28 @@
+class calci {
+    int z; 
+
+    public void addition(int x, int y) {
+        z = x + y;
+        System.out.println("The sum of the given numbers: " + z);
+    }
+
+    public void subtraction(int x, int y) {
+        z = x - y;
+        System.out.println("The difference is: " + z);
+    }
+}
+class Calculation extends calci {
+    public void multiplication(int x, int y) {
+        z = x * y;
+        System.out.println("The product is: " + z);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        int a =10,b=10;
+        Calculation demo = new Calculation(); 
+        demo.addition(a, b);
+        demo.subtraction(a, b);
+        demo.multiplication(a, b);
+    }
+}
