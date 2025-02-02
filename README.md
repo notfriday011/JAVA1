@@ -1,1 +1,1 @@
-# JAVA1
+Inheritance
