@@ -1,0 +1,38 @@
+abstract class calculator {
+    abstract void add(int a, int b);
+
+    abstract void sub(int a, int b);
+
+    abstract void divide(int a, int b);
+
+    void multiply(int a, int b) {
+        System.out.println("Multiplication: " + (a * b));
+    }
+}
+class calci extends calculator{
+    void add(int a, int b){
+        System.out.println("Addition:"+(a+b));
+    }
+    void sub(int a, int b) {
+        System.out.println("Subtraction:" + (a + b));
+    }
+    void divide(int a, int b){
+            System.out.println("Divide:" + (a / b));
+
+        }
+
+
+    }
+
+public class Main{
+    public static void main(String[]args){
+        calci a = new calci();
+        a.add(10,5);
+        a.sub(10,5);
+        a.divide(10,5);
+        a.multiply(10,5);
+
+
+        }
+
+    }
