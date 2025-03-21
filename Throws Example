@@ -1,0 +1,19 @@
+
+public class Main {
+        static void find(int age) throws ArithmeticException, NullPointerException {
+
+            if (age < 18) {
+
+                throw new ArithmeticException("Not eligible to vote\nYou are just "+age);
+
+            }
+            System.out.println("Congratulations!!\nYou are eligible to vote");
+        }
+        public static void main(String[] args) {
+            try {
+                find(19);
+            } catch (ArithmeticException e) {
+                System.out.println("Exception caught: " + e.getMessage());
+            }
+        }
+    }
