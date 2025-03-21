@@ -1,0 +1,31 @@
+public class Main {
+    double radius;
+    double width;
+    double length;
+    double height;
+    double area;
+
+
+    public Main(double length, double width) {
+        area = length * width;
+        System.out.println("Area of rectangle: " + area);
+    }
+
+
+    public Main(double r) {
+        area = 3.14 * r * r;
+        System.out.println("Area of circle: " + area);
+    }
+
+
+    public Main(double height, int base) {
+        area = 0.5 * height * base;
+        System.out.println("Area of triangle: " + area);
+    }
+
+    public static void main(String[] args) {
+        new Main(10.0, 11.0);
+        new Main(15.0);
+        new Main(11.0, 11);
+    }
+}
