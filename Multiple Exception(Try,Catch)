@@ -1,0 +1,13 @@
+public class MultipleExceptionExample {
+    public static void main(String[] args) {
+        try {
+            int a = 10 / 0;
+            int arr[] = new int[5];
+            arr[13] = 50;
+        } catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception: " + e.getMessage());
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out of Bounds Exception: " + e.getMessage());
+        }
+    }
+}
