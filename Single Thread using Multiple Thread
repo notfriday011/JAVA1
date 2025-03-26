@@ -1,0 +1,16 @@
+class Thread3 extends Thread {
+    public void run(){
+            System.out.println("This is single task from multiple thread");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Thread3 t1 = new Thread3();
+        Thread3 t2= new Thread3();
+        t1.start();
+        t2.start();
+
+    }
+
+}
