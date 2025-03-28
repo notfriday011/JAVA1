@@ -1,0 +1,15 @@
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("READING.txt"));
+            String line;
+            while ((line = br.readLine()) != null) {
+            }
+            br.close();
+        } catch (IOException e) {
+            System.out.println("Error reading file: " + e.getMessage());
+        }
+    }
+}
