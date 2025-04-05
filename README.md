@@ -17,5 +17,6 @@
 17. Single task using multiple Thread
 18. Multiple task using multiple Thread
 19. Priority to Thread
-20. To find Odd Even
-21. Converting temperature(fahrenheit,kelvin,celsius)
+20. To find if Number is palindrome
+21. To find Odd Even
+22. Converting temperature(fahrenheit,kelvin,celsius)
