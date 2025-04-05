@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Solution {
+    public double[] convertTemperature(double celsius) {
+        double kelvin = celsius + 273.15;
+        double fahrenheit = celsius * 1.8 + 32;
+        return new double[]{kelvin, fahrenheit};
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter temperature in Celsius: ");
+        double celsius = sc.nextDouble();
+
+        Solution s1 = new Solution();
+        double[] result = s1.convertTemperature(celsius);
+
+        System.out.printf("In Kelvin: %.5f\n", result[0]);
+        System.out.printf("In Fahrenheit: %.5f\n", result[1]);
+
+        sc.close();
+    }
+}
