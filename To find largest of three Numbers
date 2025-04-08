@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class LargestFinder {
+    public int HelloLarge(int a, int b, int c) {
+        int largest;
+
+        if (a >= b && a >= c) {
+            largest = a;
+        } else if (b >= a && b >= c) {
+            largest = b;
+        } else {
+            largest = c;
+        }
+
+        return largest;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter three number: ");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+        LargestFinder m1 = new LargestFinder();
+        int largest = m1.HelloLarge(num1, num2, num3);
+
+        System.out.println("The largest number is: " + largest);
+
+        sc.close();
+    }
+}
+
