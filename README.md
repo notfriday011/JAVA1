@@ -20,3 +20,4 @@
 20. To find if Number is palindrome
 21. To find Odd Even
 22. Converting temperature(fahrenheit,kelvin,celsius)
+23. To find largest of three numbers
