@@ -15,7 +15,7 @@ class calci implements calculator{
         System.out.println("Addition:"+c);
     }
    public void sub(int a, int b) {
-         int c = a+b;
+         int c = a-b;
         System.out.println("Subtraction:" + c);
     }
      public void divide(int a, int b){
