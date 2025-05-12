@@ -19,6 +19,7 @@ class calci implements calculator{
         System.out.println("Subtraction:" + c);
     }
      public void divide(int a, int b){
+int c=a/b;
             System.out.println("Divide:" + c);
         }
     }
